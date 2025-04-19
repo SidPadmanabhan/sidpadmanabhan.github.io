@@ -1,0 +1,259 @@
+/* scroll functionality */
+/* ----------------------------------------------------- */
+
+.scroll-down {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.scroll-down img {
+    width: 19px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: bounce 1.5s infinite;
+  }
+  /* -------------------------------------------------- */
+  .scroll-down img:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+section {
+    margin-bottom: 300px;
+}
+
+
+#about #name {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400; 
+    font-size: 32px;
+    
+}
+
+#about {
+    font-family: "Source Code Pro", monospace;
+    max-width: 800px;
+    margin-left: 300px;
+    margin-top: 120px;
+    padding: 70px;
+}
+
+#intro {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#second-section {
+    margin-bottom: 20px ;
+    margin-left: 0px;
+}
+
+#third-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#fourth-section {
+    margin-top: 20px;
+}
+
+#about-btns {
+    margin-top: 60px;
+}
+
+#resume-btn {
+    cursor: pointer;
+    font-family: "Source Code Pro", monospace;
+    font-size: 15px;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: #3e4a94;
+    transition: transform .2s;
+
+}
+
+#projects-btn {
+    cursor: pointer;
+    font-family: "Source Code Pro", monospace;
+    font-size: 15px;
+    padding: 15px 30px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+    border-color: #3e4a94;
+    transition: transform .2s;
+
+}
+
+#resume-btn:hover {
+    transform: scale(1.04);
+    transition: transform .2s;
+}
+
+#projects-btn:hover {
+    transform: scale(1.04);
+    transition: transform .2s;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    text-align: left;
+    /* background-image: url("assets/images/background.jpg"); */
+    background-size: auto;
+}
+
+
+#skills 
+{  
+    margin-top: 900px;
+}
+
+
+.subheading {
+    margin-bottom: 60px;
+    font-weight: 100000;
+    font-size: 30px;
+    text-align: center;
+}
+
+.emojis {
+    margin-top: 30px;
+}
+
+
+.emojis img {
+    width: 35px;
+}
+
+.emojis img:hover {
+    transform: scale(1.1) translate(-3px);
+    cursor: pointer;
+}
+
+#projects {
+    margin-top: 200px;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-box {
+    width: 28%;
+    transition: transform 0.2s;
+}
+
+hr {
+    margin-top: 210px;
+    height: 2.5px;
+    background-color: black;
+    border: none;
+}
+
+.project-box:hover {
+    transform: scale(1.03); 
+    transition: transform 0.2s;
+}
+
+
+.box-container {
+    margin: 10px auto;
+    width: 280px;
+    height: 370px;
+    border: inset;
+    border-width: 4px;
+    border-width: px;
+    border-radius: 12px;
+    background: white;
+}
+
+#media-icons { 
+    margin-top: 300px;
+}
+
+.contact-icons {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact-icons div {
+    margin: 11px;
+}
+
+.contact-icons img {
+    width: 40px;
+    filter: invert(21%) sepia(51%) saturate(1954%) hue-rotate(220deg) brightness(94%) contrast(87%);
+}
+
+.contact-icons img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+/* .right-side .left_side {
+
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+
+} */
+
+ 
+
+
+.skills-icons  {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-icons div {
+    margin: 10px;
+    padding: 10px;
+    filter: invert(21%) sepia(51%) saturate(1954%) hue-rotate(220deg) brightness(94%) contrast(87%);
+} 
+
+.skills-icons img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.skills-icons img {
+    transition: transform .2s;
+    width: 50px;
+    height: auto;
+}
+
+/* ----------------------------------------------------- */
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ----------------------------------------------------- */
+
+.bullet {
+    font-size: 22px;
+    margin-right: 5px;
+}
+  
