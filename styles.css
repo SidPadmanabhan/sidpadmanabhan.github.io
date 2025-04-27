@@ -92,7 +92,6 @@ body {
     background-color: transparent;
   }
 
-
  
 section {
     margin-bottom: 30vh;
@@ -121,6 +120,7 @@ section {
 .bullet {
     font-size: 22.5px;
     margin-right: 5px;
+    color:black; 
 }
 
 #intro {
@@ -141,7 +141,6 @@ section {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 
 
 #about-btns {
