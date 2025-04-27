@@ -69,14 +69,13 @@ body {
     scroll-behavior: smooth;
   }
 
-/* scroll functionality */
-/* ----------------------------------------------------- */
+
 
 .scroll-down {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .scroll-down img {
@@ -93,11 +92,10 @@ body {
     background-color: transparent;
   }
 
-/* -------------------------------------------------- */
-/* about section */
+
  
 section {
-    margin-bottom: 300px;
+    margin-bottom: 30vh;
 }
 
 #about #name {
@@ -106,12 +104,18 @@ section {
 }
 
 #about {
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
+    width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
-    padding: 70px;
     font-size: 17px;
-    margin-bottom: 300px; /* Add spacing below */
+    margin-bottom: 20vh;
+    position: relative;
+    min-height: 100vh; 
+    justify-content: center; 
+    padding-top: 0; 
+    margin-top: -5vh; 
 }
 
 .bullet {
@@ -120,25 +124,29 @@ section {
 }
 
 #intro {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #second-section {
-    margin-bottom: 20px ;
+    margin-bottom: 15px;
     margin-left: 0px;
 }
 
-#third-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
+#second-section p {
+    margin-bottom: 5px;
 }
 
-/* -------------------------------------------------- */
-/* about section buttons */
+#third-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 
 #about-btns {
-    margin-top: 60px;
+    margin-top: 15px;
+    margin-bottom: 60px;
 }
 
 #resume-btn {
@@ -181,12 +189,11 @@ section {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* -------------------------------------------------- */
-/* projects section */
+
 
   #projects {
-    margin-top: 200px;
-    margin-bottom: 300px; /* Add spacing below */
+    margin-top: 10vh;
+    margin-bottom: 30vh;
 }
 
 .quote {
@@ -306,15 +313,14 @@ section {
     color: #3e4a94;
 }
 
-/* -------------------------------------------------- */
-/* experience section */
+
 
 .experience-container { 
     display: flex;
     justify-content: center;
     position: relative;
     margin-top: 40px;
-    margin-bottom: 300px; /* Add spacing below */
+    margin-bottom: 30vh;
 }
 
 
@@ -466,23 +472,16 @@ section {
 
 
 
-/* -------------------------------------------------- */
 
-/* -------------------------------------------------- */
-/* skills section */
-/* -------------------------------------------------- */
-/* skills section */
 
     .skills-container {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        /* flex-direction: row;
-        flex-wrap: wrap; */
         justify-content: center;
         margin: auto;
         width: 50%;
         gap: 2%;
-        margin-bottom: 300px; /* Add spacing below */
+        margin-bottom: 30vh;
     }
 
     .skill-box {
@@ -717,27 +716,27 @@ footer .contact-icons {
     margin-bottom: 0; 
 }
 
-/* --- Focus + Blur Style for Top 5 Section --- */
 
 
-/* --- Contact Me Section --- */
 
-/* --- General Section Styling --- */
 
-/* --- Responsive Styles --- */
+
+
+
+
 @media (max-width: 768px) {
     /* Adjust padding for smaller screens */
     body {
         padding-top: 50px; /* Reduce body padding if navbar height changes */
     }
 
-    /* --- General Image Scaling --- */
+    
     img {
         max-width: 100%; /* Ensure images don't overflow their containers */
         height: auto; /* Maintain aspect ratio */
     }
 
-    /* --- Navbar Adjustments --- */
+    
     .navbar ul {
         display: block; /* Allow items to stack */
     }
@@ -759,7 +758,7 @@ footer .contact-icons {
         color: #4a57ac; /* Keep hover color */
     }
 
-    /* --- About Section Adjustments --- */
+    
     #about-container {
         flex-direction: column; /* Stack name/text/buttons */
         align-items: center; /* Center items vertically */
@@ -795,7 +794,7 @@ footer .contact-icons {
         text-align: center;
     }
     
-    /* --- Project Section Adjustments --- */
+    
     #projects-container {
         gap: 20px; /* Adjust gap for single column */
     }
@@ -807,7 +806,7 @@ footer .contact-icons {
         min-height: 300px; /* Optional: reduce min-height */
     }
     
-    /* --- Skills Grid Adjustments --- */
+    
     .skills-container {
         grid-template-columns: 1fr; /* Single column */
         width: 80%; /* Reduce width */
@@ -823,7 +822,7 @@ footer .contact-icons {
         font-size: 14px; /* Slightly smaller text */
     }
 
-    /* --- Top 5 Adjustments --- */
+    
     .top-items-container {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center stacked items */
@@ -834,15 +833,15 @@ footer .contact-icons {
         margin-bottom: 15px; /* Add space between stacked images */
     }
     
-    /* --- General Spacing Adjustments --- */
+    
     #about, 
     #projects, 
     #experience, 
     #skills, 
     #contact-me {
-        margin-bottom: 100px; /* Reduce space between sections */
-        padding-top: 40px;
-        padding-bottom: 40px;
+        margin-bottom: 10vh; /* Viewport-relative spacing for mobile */
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     
     .subheading {
@@ -854,7 +853,7 @@ footer .contact-icons {
         margin: 15px auto;
     }
     
-    /* --- Contact Form Adjustments --- */
+    
      .contact-container form{
          width: 90%; /* Make form wider on small screens */
      }
@@ -864,9 +863,9 @@ footer .contact-icons {
          margin-bottom: 50px;
      }
 
-    /* --- Experience Section Adjustments --- */
+    
     .experience-container {
-        margin-bottom: 150px; /* Reduce bottom margin */
+        margin-bottom: 10vh; /* Viewport-relative spacing for mobile */
     }
     
     .experience-alignment-wrapper::before {
