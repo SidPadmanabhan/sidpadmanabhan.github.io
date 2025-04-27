@@ -725,3 +725,90 @@ footer .contact-icons {
 /* --- Contact Me Section --- */
 
 /* --- General Section Styling --- */
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    body {
+        padding-top: 50px; /* Reduce body padding if navbar height changes */
+    }
+
+    /* --- Navbar Adjustments --- */
+    .navbar ul {
+        display: block; /* Allow items to stack */
+    }
+    
+    .navbar li {
+        display: block; /* Stack list items */
+        margin: 10px 0; /* Add vertical spacing */
+        text-align: center;
+    }
+
+    .navbar a {
+        padding-bottom: 2px; /* Reduce padding for underline */
+        border-bottom: none; /* Remove underline effect for stacked items */
+    }
+    
+    .navbar a:hover,
+    .navbar a:focus {
+        border-bottom: none; /* Ensure no underline on hover either */
+        color: #4a57ac; /* Keep hover color */
+    }
+
+    /* --- Skills Grid Adjustments --- */
+    .skills-container {
+        grid-template-columns: 1fr; /* Single column */
+        width: 80%; /* Reduce width */
+        gap: 15px; /* Reduce gap */
+        margin-top: 30px; /* Adjust top margin */
+    }
+
+    .skill-box {
+        padding: 15px; /* Adjust padding inside skill boxes */
+    }
+    
+    .skill-text {
+        font-size: 14px; /* Slightly smaller text */
+    }
+
+    /* --- Top 5 Adjustments --- */
+    .top-items-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center stacked items */
+    }
+
+    .top-item-img {
+        width: 60%; /* Adjust image width for vertical stack */
+        margin-bottom: 15px; /* Add space between stacked images */
+    }
+    
+    /* --- General Spacing Adjustments --- */
+    #about, 
+    #projects, 
+    #experience, 
+    #skills, 
+    #contact-me {
+        margin-bottom: 100px; /* Reduce space between sections */
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .subheading {
+        font-size: 24px; /* Smaller subheadings */
+    }
+    
+    .quote {
+        font-size: 14px; /* Smaller quotes */
+        margin: 15px auto;
+    }
+    
+    /* --- Contact Form Adjustments --- */
+     .contact-container form{
+         width: 90%; /* Make form wider on small screens */
+     }
+     
+     .contact-me-msg {
+         font-size: 16px; /* Adjust font size */
+         margin-bottom: 50px;
+     }
+}
