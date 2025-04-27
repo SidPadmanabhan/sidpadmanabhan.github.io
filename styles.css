@@ -720,8 +720,6 @@ footer .contact-icons {
 /* --- Focus + Blur Style for Top 5 Section --- */
 
 
-
-
 /* --- Contact Me Section --- */
 
 /* --- General Section Styling --- */
@@ -731,6 +729,12 @@ footer .contact-icons {
     /* Adjust padding for smaller screens */
     body {
         padding-top: 50px; /* Reduce body padding if navbar height changes */
+    }
+
+    /* --- General Image Scaling --- */
+    img {
+        max-width: 100%; /* Ensure images don't overflow their containers */
+        height: auto; /* Maintain aspect ratio */
     }
 
     /* --- Navbar Adjustments --- */
@@ -755,6 +759,54 @@ footer .contact-icons {
         color: #4a57ac; /* Keep hover color */
     }
 
+    /* --- About Section Adjustments --- */
+    #about-container {
+        flex-direction: column; /* Stack name/text/buttons */
+        align-items: center; /* Center items vertically */
+        width: 90%; /* Limit container width */
+        margin: 0 auto; /* Center container */
+    }
+    
+    #name {
+        font-size: 28px; /* Adjust name size */
+        margin-bottom: 20px;
+    }
+    
+    #about-text {
+        width: 100%; /* Allow text to use full width of container */
+        padding: 15px; /* Adjust padding */
+        margin-top: 0;
+        font-size: 15px;
+        text-align: center; /* Center text */
+    }
+    
+    #buttons-container {
+        margin-top: 20px; /* Adjust button spacing */
+        display: flex; /* Use flex for buttons */
+        flex-direction: column; /* Stack buttons */
+        gap: 10px; /* Add gap between buttons */
+        align-items: center;
+    }
+    
+    #resume-btn, #projects-btn {
+        padding: 12px 25px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+        width: 80%; /* Make buttons wider */
+        text-align: center;
+    }
+    
+    /* --- Project Section Adjustments --- */
+    #projects-container {
+        gap: 20px; /* Adjust gap for single column */
+    }
+
+    .project-box {
+        width: 90%; /* Make project boxes stack */
+        margin: 0 auto; /* Center the single box */
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 300px; /* Optional: reduce min-height */
+    }
+    
     /* --- Skills Grid Adjustments --- */
     .skills-container {
         grid-template-columns: 1fr; /* Single column */
@@ -811,4 +863,88 @@ footer .contact-icons {
          font-size: 16px; /* Adjust font size */
          margin-bottom: 50px;
      }
+
+    /* --- Experience Section Adjustments --- */
+    .experience-container {
+        margin-bottom: 150px; /* Reduce bottom margin */
+    }
+    
+    .experience-alignment-wrapper::before {
+        /* Adjust or remove the vertical line on mobile */
+        left: 50%; /* Center the line */
+        transform: translateX(-50%);
+        /* Or display: none; if preferred */
+    }
+    
+    .experience-wrapper {
+        flex-direction: column; /* Stack timeline and content */
+        align-items: center; /* Center items */
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    .timeline {
+        width: 90%; /* Make timeline wider */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add space below */
+        height: auto; /* Adjust height */
+    }
+    
+    .timeline-inner {
+        justify-content: center; /* Center dot and date */
+        height: auto;
+    }
+    
+    .date {
+        position: relative; /* Change from absolute */
+        width: auto; /* Remove fixed width */
+        text-align: center; /* Center date text */
+        margin-bottom: 5px; /* Space below date */
+        left: auto; /* Reset left positioning */
+    }
+    
+    .dot {
+        position: relative; /* Change from absolute */
+        left: auto; /* Reset left positioning */
+        margin: 0 auto; /* Center the dot */
+    }
+    
+    .experience-content {
+        width: 100%; /* Allow content to take full width */
+        align-items: center; /* Center the box inside */
+    }
+
+    .experience-box {
+        width: 90%; /* Responsive width */
+        height: auto; /* Auto height */
+        margin-left: 0; /* Remove fixed margin */
+        margin-right: 0;
+        transform: none !important; /* Disable hover transform */
+    }
+    
+    .experience-box:hover {
+         transform: none; /* Ensure no transform on hover */
+         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Keep original shadow */
+    }
+    
+    .company-logo {
+        width: 30px; /* Smaller logo */
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    .company-name,
+    .company-role {
+         font-size: 14px; /* Adjust font size */
+         margin-top: 10px;
+         margin-bottom: 5px;
+    }
+    
+    .experience-description {
+        font-size: 14px; /* Adjust font size */
+    }
+    
+    .experience-tags div {
+        font-size: 11px; /* Adjust tag font size */
+        padding: 2px 6px;
+    }
 }
