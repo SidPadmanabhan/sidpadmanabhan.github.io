@@ -145,7 +145,11 @@ section {
 
 #about-btns {
     margin-top: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 4cap;
+}
+
+#reach-out {
+    margin-bottom: 20px;
 }
 
 #resume-btn {
@@ -594,8 +598,8 @@ section {
 }
 
 .top-item-img {
-    width: 170px;
-    height: 250px;
+    width: 160px;
+    height: 230px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     filter: grayscale(80%) blur(1.6px);
