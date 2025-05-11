@@ -609,12 +609,14 @@ section {
     cursor: pointer;
 }
 
+
 .top-items-container:hover .top-item-img {
     filter: grayscale(40%) blur (0.5px);
     opacity: 0.85;
 }
 
 .top-items-container:hover .top-item-img:hover {
+    cursor: pointer;
     filter: none;
     opacity: 1;
     transform: scale(1.1);
@@ -835,8 +837,7 @@ footer .contact-icons {
         width: 60%; /* Adjust image width for vertical stack */
         margin-bottom: 15px; /* Add space between stacked images */
     }
-    
-    
+
     #about, 
     #projects, 
     #experience, 
