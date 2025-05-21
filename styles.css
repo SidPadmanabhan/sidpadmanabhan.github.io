@@ -90,11 +90,9 @@ body {
     }
 }
 
-  html {
+html {
     scroll-behavior: smooth;
-  }
-
-
+}
 
 .scroll-down {
     display: flex;
@@ -117,7 +115,6 @@ body {
     background-color: transparent;
   }
 
- 
 section {
     padding: 80px 0;
     margin-bottom: 100px;
@@ -1070,7 +1067,7 @@ footer .contact-icons {
     object-fit: cover;
     border: 2px solid #4a57ac;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 @media (max-width: 768px) {
