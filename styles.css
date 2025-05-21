@@ -1,9 +1,8 @@
 :root {
-    /* Remove all CSS variables */
 }
 
 body {
-    margin: 0; /* Remove default browser margin */
+    margin: 0; 
     font-family: "Ubuntu Mono", monospace;
     text-align: left;
     /* background-image: url("assets/images/background.jpg"); */
@@ -13,9 +12,7 @@ body {
     position: relative;
 }
 
-/* Remove the gradient accent line */
 
-/* Paper-like texture for background */
 body::after {
     content: "";
     position: fixed;
@@ -65,8 +62,8 @@ body::after {
 }
 
 .navbar a:hover{
-    color: #4a57ac;
-    border-bottom: 2px solid #4a57ac;
+    color: #2d3a7c;
+    border-bottom: 2px solid #2d3a7c;
 }
 
 body {
@@ -183,9 +180,9 @@ section {
     padding: 14px 29px;
     background-color: white;
     border-radius: 8px;
-    border: 2px solid #3e4a94;
+    border: 2px solid #2d3a7c;
     transition: transform .2s, background-color 0.2s, color 0.2s, border-color 0.2s;
-    color: #3e4a94;
+    color: #2d3a7c;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
@@ -211,7 +208,7 @@ section {
     transform: scale(1.02);
     transition: transform .2s;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    border-color: #3e4a94;
+    border-color: #2d3a7c;
 }
 
 #projects-btn {
@@ -220,10 +217,10 @@ section {
     font-size: 15px;
     padding: 14px 29px;
     color: white;
-    background-color: #3e4a94;
-    background-image: linear-gradient(to bottom, #4a57ac, #3e4a94);
+    background-color: #2d3a7c;
+    background-image: linear-gradient(to bottom, #35418a, #2d3a7c);
     border-radius: 8px;
-    border: 2px solid #3e4a94;
+    border: 2px solid #2d3a7c;
     transition: transform .2s, background-color 0.2s;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
     position: relative;
@@ -304,7 +301,7 @@ section {
     margin-top: 13px;
     margin-bottom: 4px;
     font-size: 20px;
-    color: #4a57ac;
+    color: #2d3a7c;
     font-weight: bold;
 }
 
@@ -1082,7 +1079,7 @@ footer .contact-icons {
     object-fit: cover;
     border: 2px solid #4a57ac;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 @media (max-width: 768px) {
