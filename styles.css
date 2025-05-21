@@ -13,17 +13,7 @@ body {
     position: relative;
 }
 
-/* Gradient accent line at top of page */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(to right, #3e4a94, #6a77cc, #3e4a94);
-    z-index: 2000;
-}
+/* Remove the gradient accent line */
 
 /* Paper-like texture for background */
 body::after {
