@@ -296,6 +296,7 @@ section {
     background-repeat: repeat-x;
     background-position: bottom;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .project-name {
@@ -314,6 +315,20 @@ section {
     font-size: 15px;
 }
 
+.github-icon {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    filter: invert(21%) sepia(51%) saturate(1954%) hue-rotate(220deg) brightness(94%) contrast(87%);
+    transition: transform 0.2s ease;
+}
+
+.github-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
 .middle-section {
     margin-left: 20px;
