@@ -5,7 +5,6 @@ body {
     margin: 0; 
     font-family: "Ubuntu Mono", monospace;
     text-align: left;
-    /* background-image: url("assets/images/background.jpg"); */
     background-size: auto;
     background-color: #ffffff;
     color: #333333;
@@ -469,7 +468,6 @@ section {
     margin-right: 20px;
     margin-bottom: 10px;
     border-radius: 50%;
-    /* border: 1px solid darkgray; */
 }
 
 .company-name {
@@ -612,9 +610,6 @@ section {
     
 
 
-/* -------------------------------------------------- */
-/* contact icons section */
-
 .contact-icons {
     display: flex;
     gap: 10px;
@@ -636,9 +631,6 @@ section {
     transform: scale(1.1);
     transition: transform 0.2s;
 }
-
-/* -------------------------------------------------- */
-/* my top 5s */
 
 #top-5 {
     padding: 80px 0px;
@@ -715,8 +707,6 @@ section {
 
 
 
-
- /* leave a message */
 
  #contact-me {
     text-align: center;
@@ -980,7 +970,6 @@ footer .contact-icons {
     .experience-alignment-wrapper::before {
         left: 50%;
         transform: translateX(-50%);
-        /* Or display: none; if preferred */
     }
     
     .experience-wrapper {
@@ -1096,7 +1085,6 @@ footer .contact-icons {
     }
 }
 
-/* Fade-in animation for sections */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1118,7 +1106,6 @@ footer .contact-icons {
     animation: fadeInUp 0.8s ease forwards;
 }
 
-/* Delay animations for different sections */
 #about {
     animation-delay: 0.1s;
 }
@@ -1143,7 +1130,6 @@ footer .contact-icons {
     animation-delay: 0.6s;
 }
 
-/* Standardize border-radius */
 .project-box, 
 .skill-box, 
 #name-input, 
@@ -1160,7 +1146,6 @@ footer .contact-icons {
     border-radius: 4px;
 }
 
-/* Subtle background shifts between sections */
 #about {
     background-color: #ffffff;
 }
@@ -1190,7 +1175,6 @@ footer .contact-icons {
     margin-bottom: 100px;
 }
 
-/* Top-5 section already has a background */
 #top-5 {
     padding: 80px 0px;
     background-color: #f8f9fa;
@@ -1200,7 +1184,6 @@ footer .contact-icons {
     border-radius: 0;
 }
 
-/* Add additional padding to the sections */
 section {
     padding: 80px 0;
     margin-bottom: 100px;
