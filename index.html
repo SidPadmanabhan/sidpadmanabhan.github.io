@@ -7,9 +7,6 @@
     <title>Sid Padmanabhan</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet"> -->
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +15,9 @@
 
     <link rel="icon" type="image/png" href="assets/images/website_logo.png" />
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
           
 </head>
 
@@ -36,6 +31,24 @@
             <li> <a href = "#skills"> Skills </a> </li>
             <li> <a href = "#contact-me"> Contact </a> </li>
         </ul>
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
     </nav>
     
     <section id = "about"> 
@@ -46,28 +59,20 @@
             <img src="assets/images/pfp.jpg" alt="Profile Picture" id="profile-pic">
         </div>
         
-        <p id = "intro"> a <span style = "color:#3e4a94"> developer </span> who is currently - </p>
+        <p id = "intro"> a <span style = "color:var(--text-accent)"> developer </span> who is currently - </p>
         
         <div id = "second-section">
-            <p> <span class="bullet">›</span> a sophomore at <span style = "color:#3e4a94"> Rutgers University</span>, studying computer science & business administration </p>
-            <p> <span class="bullet">›</span> a software engineer intern at <span style = "color:#3e4a94"> Agadia</span> </p>
-            <!-- <p> <span class="bullet">›</span> driven to continously learn new topics and expand my skillset in technology </p> -->
-            <p> <span class="bullet">›</span> taking <span style = "color:#3e4a94"> deep learning, data management, software methodology </spa                      n> </p>
+            <p> <span class="bullet">›</span> a sophomore at <span style = "color:var(--text-accent)"> Rutgers University</span>, studying computer science & business administration </p>
+            <p> <span class="bullet">›</span> a software engineer intern at <span style = "color:var(--text-accent)"> Agadia</span> </p>
+            <p> <span class="bullet">›</span> taking <span style = "color:var(--text-accent)"> deep learning, data management, software methodology </span> </p>
         </div>
         
         <div id = "third-section"> 
             <p> Outside of academics and career, I thoroughly enjoy hiking, listening to music, reading, birdwatching, watching movies and anime, and recently running. </p>
-            <!-- <div class = "emojis"> 
-                <img src = "assets/images/tree.svg" id = "tree" alt = "picture of tree">
-                <img src = "assets/images/music.svg" id = "music" alt = "picture of emoji"/> 
-                <img src = "assets/images/movies.svg" id = "movies"/>
-                <img src = "assets/images/reading.svg" id = "reading"/> 
-                <img src = "assets/images/running.svg" id = "running"/>
-            </div> -->
         </div>
 
         
-        <p id = "reach-out"> Feel free to reach out at <span style = "color:#3e4a94"> sp2492 [at] rutgers [dot] edu </span></p>
+        <p id = "reach-out"> Feel free to reach out at <span style = "color:var(--text-accent)"> sp2492 [at] rutgers [dot] edu </span></p>
 
         <div id = "about-btns">
             <button id = "projects-btn" onclick = "location.href = '#projects'"> projects </button>
@@ -88,7 +93,7 @@
         <h2 class = "subheading"> PROJECTS </h2>
         
         <p class = "quote"> 
-            <i> "Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game." - Johann Wolfgang von Goethe </i>
+            <i> "Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game." — Johann Wolfgang von Goethe </i>
         </p>
 
 
@@ -100,15 +105,15 @@
                 <div class = "top-section">
                     <div class="project-name-container">
                         <div class = "project-name" > Satori </div>
-                        <img src="assets/images/github.svg" class="github-icon" alt="GitHub Repository">
+                        <div class="project-github-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
                     </div>
                     <div class = "project-year"> 2025 </div>   
                 </div>
 
                 <div class = "middle-section">
 
-                    <!-- screenshot of project -->
-                    <!-- <img src = "assets/images/nbabuzz.png" class = "project-screenshot">  -->
                     <p class = "project-description"> Journaling/Buddhism App. Coming soon! Currently Working ... 🛠️ </p>
                     
                 </div>
@@ -128,7 +133,9 @@
                     <div class="project-name-container">
                         <div class = "project-name" > LearnTrack </div>
                         <a href="https://github.com/Cmmatrubai/learntrack" target="_blank">
-                            <img src="assets/images/github.svg" class="github-icon" alt="GitHub Repository">
+                            <div class="project-github-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
                         </a>
                     </div>
                     <div class = "project-year"> 2025 </div>   
@@ -136,7 +143,6 @@
 
                 <div class = "middle-section">
 
-                    <!-- screenshot of project -->
                     <img src = "assets/images/learntrack.png" class = "project-screenshot"> 
                     <p class = "project-description"> LearnTrack creates personalized learning paths based on user prompts. Includes a Pomodoro timer and streaks to help users stay focused and be consistent. </p>
                     
@@ -159,14 +165,17 @@
                 <div class = "top-section">
                     <div class="project-name-container">
                         <div class = "project-name" > NBABuzz  </div>
-                        <a href = "https://github.com/SidPadmanabhan/NBABuzz" target = "_blank"> <img src="assets/images/github.svg" class="github-icon" alt="GitHub Repository"> </a>
+                        <a href = "https://github.com/SidPadmanabhan/NBABuzz" target = "_blank"> 
+                            <div class="project-github-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
                     </div>
                     <div class = "project-year"> 2024 </div>   
                 </div>
 
                 <div class = "middle-section">
 
-                    <!-- screenshot of project -->
                     <img src = "assets/images/nbabuzz.png" class = "project-screenshot">
                     <p class = "project-description"> NBABuzz delivers real-time NBA scores, standings, and player stats. </p>
                     
@@ -198,7 +207,7 @@
     <section id = "experience"> 
         <h2 class = "subheading"> EXPERIENCE </h2>
         
-        <p class = "quote"> <i> "You cannot swim for new horizons until you have the courage to lose sight of the shore." – William Faulkner </i></u></p>
+        <p class = "quote"> <i> "You cannot swim for new horizons until you have the courage to lose sight of the shore." — William Faulkner </i></p>
 
         <div class = "experience-container"> 
         
@@ -247,46 +256,6 @@
     
                 </div>
 
-                <!-- <div class = "experience-wrapper">
-    
-                    <div class = "timeline">
-                        <div class = "timeline-inner">
-                            <div class = "date">
-                                <div>march 2024 - </div>
-                                <div>present</div>
-                            </div>
-                            <div class = "dot"></div>
-                        </div>
-                    </div>
-    
-                    <div class = "experience-content"> 
-                        <div class = "experience-box"> 
-        
-                            <div class = "experience-header">
-                                <div class = "left-header"> 
-                                    <div class = "company-name"> IpserLab </div>
-                                <div class = "company-role"> | Software Engineer Intern </div>
-                                </div>
-            
-                                <div> <img src = "assets/images/ipser.jpeg" class = "company-logo" alt = "picture of company logo"> </div> 
-            
-                            </div>
-            
-                            <div class = "experience-body">
-            
-                                <div class = "experience-description"> coming soon </div>
-            
-                                <div class = "experience-tags">
-                                    <div> #comingsoon </div>
-                                    <div> #comingsoon </div> 
-                                </div>
-            
-                            </div>
-                        </div>
-                    </div>
-        
-                    
-                </div>    -->
                 
     
                 <div class = "experience-wrapper">
@@ -436,57 +405,77 @@
 
         <h2 class = "subheading"> SKILLS </h2>
 
-        <p class = "quote"> <i> "The capacity to learn is a gift; The ability to learn is a skill; The willingness to learn is a choice." - Brian Herbert </i></u></p>
+        <p class = "quote"> <i> "The capacity to learn is a gift; The ability to learn is a skill; The willingness to learn is a choice." — Brian Herbert </i></p>
 
         <div class = "skills-container">  
 
            <div class = "skill-box"> 
-                <img src = "assets/images/python.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fab fa-python"></i>
+                </div> 
                 <p class = "skill-text"> Python </p>
            </div>
 
            <div class = "skill-box"> 
-                <img src = "assets/images/java.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fab fa-java"></i>
+                </div> 
                 <p class = "skill-text"> Java </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/c.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-code"></i>
+                </div> 
                 <p class = "skill-text"> C </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/html.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fab fa-html5"></i>
+                </div> 
                 <p class = "skill-text"> HTML </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/css.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fab fa-css3-alt"></i>
+                </div> 
                 <p class = "skill-text"> CSS </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/javascript.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fab fa-js-square"></i>
+                </div> 
                 <p class = "skill-text"> JavaScript </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/react.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fab fa-react"></i>
+                </div> 
                 <p class = "skill-text"> React </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/flutter.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-mobile-alt"></i>
+                </div> 
                 <p class = "skill-text"> Flutter </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/firebase.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-fire"></i>
+                </div> 
                 <p class = "skill-text"> Firebase </p>
             </div>
 
             <div class = "skill-box"> 
-                <img src = "assets/images/git.svg" class = "skill"> 
+                <div class="skill-icon-wrapper">
+                    <i class="fab fa-git-alt"></i>
+                </div> 
                 <p class = "skill-text"> Git/Github </p>
             </div>
 
@@ -497,7 +486,7 @@
     <section id = "top-5"> 
     
         <h2 class = "subheading"> personal favorites </h2>
-        <p class = "quote"> <i> "Stories can conquer fear you know. They can make the heart bigger." - Ben Okri </i> </p>
+        <p class = "quote"> <i> "Stories can conquer fear you know. They can make the heart bigger." — Ben Okri </i> </p>
 
         <div class = top-5-category>
             <h3> books </h3>
@@ -557,16 +546,69 @@
     <footer>
     <div id = "media-icons"> 
         <div class = "contact-icons">
-            <div> <a href = "https://www.linkedin.com/in/sid-padmanabhan-84a978289" target = _blank> <img src = "assets/images/linkedin.svg"> </a> </div> 
-            <div> <a href = "https://github.com/SidPadmanabhan" target = _blank> <img src = "assets/images/github.svg"> </a> </div>
-            <div> <a href = "https://open.spotify.com/user/c1s1b6rx14ufgoaqh3gw6n1tw?si=7058c77b4a284091" target = "_blank"> <img src = "assets/new_spotify.svg"> </a> </div>
-            <div> <a href = "mailto:sp2492@rutgers.edu"> <img src = "assets/images/email.svg"> </a> </div> 
+            <div> <a href = "https://www.linkedin.com/in/sid-padmanabhan-84a978289" target = _blank> 
+                <div class="icon-circle">
+                    <i class="fab fa-linkedin-in footer-icon"></i>
+                </div>
+            </a> </div> 
+            <div> <a href = "https://github.com/SidPadmanabhan" target = _blank> 
+                <div class="icon-circle">
+                    <i class="fab fa-github footer-icon"></i>
+                </div>
+            </a> </div>
+            <div> <a href = "https://open.spotify.com/user/c1s1b6rx14ufgoaqh3gw6n1tw?si=7058c77b4a284091" target = "_blank"> 
+                <div class="icon-circle">
+                    <i class="fab fa-spotify footer-icon"></i>
+                </div>
+            </a> </div>
+            <div> <a href = "mailto:sp2492@rutgers.edu"> 
+                <div class="icon-circle">
+                    <i class="fas fa-envelope footer-icon"></i>
+                </div>
+            </a> </div> 
         </div>
         
         
     </div>
         <p>&copy; 2025 Sid Padmanabhan. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Dark mode functionality
+        const themeToggle = document.getElementById('theme-toggle-btn');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+        
+        // Update button icon based on current theme
+        function updateThemeIcon() {
+            const sunIcon = themeToggle.querySelector('.sun-icon');
+            const moonIcon = themeToggle.querySelector('.moon-icon');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        }
+        
+        // Initialize theme icon
+        updateThemeIcon();
+        
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon();
+        });
+    </script>
 
 </body>
 </html>
