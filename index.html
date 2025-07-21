@@ -596,10 +596,8 @@
             }
         }
         
-        // Initialize theme icon
         updateThemeIcon();
         
-        // Theme toggle functionality
         themeToggle.addEventListener('click', () => {
             const currentTheme = body.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
