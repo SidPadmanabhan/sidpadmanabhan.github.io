@@ -934,7 +934,6 @@ a .project-github-icon:hover {
     justify-content: center;
     transition: transform 0.3s ease;
     border: 1px solid var(--text-accent);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .footer-icon {
@@ -1151,6 +1150,10 @@ footer .contact-icons {
     margin-top: 0; 
     margin-bottom: 0;
     gap: 8px;
+}
+
+footer .contact-icons a {
+    text-decoration: none;
 }
 
 
