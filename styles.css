@@ -167,19 +167,18 @@ body::after {
     text-decoration: none;
     color: var(--text-primary);
     font-size: 17px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
 .navbar a:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(183, 148, 246, 0.5);
 }
 
 .navbar a:hover {
     color: var(--text-accent);
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    border-bottom: 2px solid var(--text-accent);
 }
 
 body {
