@@ -167,12 +167,7 @@ body::after {
     text-decoration: none;
     color: var(--text-primary);
     font-size: 17px;
-    transition: color 0.3s ease, border-bottom 0.3s ease, box-shadow 0.3s ease;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-    border-radius: 4px;
-    padding: 8px 12px;
-    margin: -8px -12px;
+    transition: color 0.3s ease;
 }
 
 .navbar a:focus {
@@ -180,9 +175,11 @@ body::after {
     box-shadow: 0 0 0 2px rgba(183, 148, 246, 0.5);
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: var(--text-accent);
-    border-bottom: 2px solid var(--text-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 body {
@@ -285,15 +282,16 @@ section {
 #third-section {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    display: block;
+    padding: 15px 20px;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-light);
+    display: inline-block;
     width: auto;
     max-width: 100%;
-    transition: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 #about-btns {
@@ -303,19 +301,19 @@ section {
 
 #reach-out {
     margin-bottom: 20px;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0;
-    border: none;
-    display: block;
+    padding: 12px 16px;
+    background-color: var(--bg-tertiary);
+    border-radius: 6px;
+    border: 1px solid var(--border-primary);
+    display: inline-block;
     width: auto;
     max-width: 100%;
-    transition: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 [data-theme="dark"] #reach-out {
-    background-color: transparent;
-    border: none;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
     box-shadow: none;
 }
 
@@ -769,8 +767,8 @@ a .project-github-icon:hover {
 }
 
 .experience-wrapper:hover .dot {
-    transform: scale(1.1);
-    box-shadow: 0 0 0 2px rgba(183, 148, 246, 0.4);
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px rgba(183, 148, 246, 0.3);
 }
 
 .date {
@@ -994,8 +992,8 @@ a .project-github-icon:hover {
 }
 
 .top-item-img {
-    width: 160px;
-    height: 230px;
+    width: 150px;
+    height: 215px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.12);
     filter: grayscale(85%) blur(1px);
@@ -1009,7 +1007,7 @@ a .project-github-icon:hover {
     filter: grayscale(70%) blur(0.5px);
     opacity: 0.6;
     transform: translateY(2px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08);ß
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
 .top-items-container:hover .top-item-img:hover {
