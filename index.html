@@ -573,16 +573,14 @@
         <p>&copy; 2025 Sid Padmanabhan. All Rights Reserved.</p>
     </footer>
 
+
     <script>
-        // Dark mode functionality
         const themeToggle = document.getElementById('theme-toggle-btn');
         const body = document.body;
         
-        // Check for saved theme preference or default to light mode
         const currentTheme = localStorage.getItem('theme') || 'light';
         body.setAttribute('data-theme', currentTheme);
         
-        // Update button icon based on current theme
         function updateThemeIcon() {
             const sunIcon = themeToggle.querySelector('.sun-icon');
             const moonIcon = themeToggle.querySelector('.moon-icon');
