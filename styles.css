@@ -67,7 +67,7 @@ body::after {
 }
 
 [data-theme="dark"] #top-5 {
-    background-color: #2e2e2e;
+    background-color: #222222;
 }
 
 
@@ -311,7 +311,7 @@ section {
 }
 
 [data-theme="dark"] #reach-out {
-    background-color: var(--bg-tertiary);
+    background-color: var(--bg-secondary);
     border: 1px solid var(--border-primary);
     box-shadow: none;
 }
@@ -756,17 +756,17 @@ a .project-github-icon:hover {
     position: absolute;
     left: 110px;
     z-index: 1;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .dot:hover {
     cursor: pointer;
-    transform: scale(1.3); 
+    transform: scale(1.5); 
     box-shadow: 0 0 0 4px rgba(183, 148, 246, 0.3);
 }
 
 .experience-wrapper:hover .dot {
-    transform: scale(1.15);
+    transform: scale(1.3);
     box-shadow: 0 0 0 3px rgba(183, 148, 246, 0.3);
 }
 
