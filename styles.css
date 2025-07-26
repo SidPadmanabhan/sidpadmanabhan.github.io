@@ -34,13 +34,13 @@
 
 body {
     margin: 0; 
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "JetBrains Mono", monospace;
     text-align: left;
     background-size: auto;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -163,10 +163,10 @@ body::after {
 }
 
 .navbar a {
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "JetBrains Mono", monospace;
     text-decoration: none;
     color: var(--text-primary);
-    font-size: 17px;
+    font-size: 15px;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
@@ -188,7 +188,7 @@ body {
 .subheading {
     margin-bottom: 25px;
     font-weight: 500px;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -238,7 +238,7 @@ section {
 
 #about #name {
     font-weight: 300; 
-    font-size: 28px;   
+    font-size: 26px;   
 }
 
 #about {
@@ -247,7 +247,7 @@ section {
     max-width: 800px;
     width: 90%;
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 100px;
     position: relative;
     min-height: 100vh; 
@@ -259,9 +259,11 @@ section {
 }
 
 .bullet {
-    font-size: 22.5px;
-    margin-right: 5px;
+    font-size: 18px;
+    margin-right: 6px;
     color: var(--text-primary); 
+    font-weight: 300;
+    line-height: 1;
 }
 
 #intro {
@@ -316,10 +318,10 @@ section {
 }
 
 #resume-btn {
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "JetBrains Mono", monospace;
     cursor: pointer;
-    font-size: 15px;
-    padding: 14px 29px;
+    font-size: 14px;
+    padding: 12px 24px;
     background-color: var(--bg-primary);
     border-radius: 10px;
     border: 2px solid var(--text-accent);
@@ -368,10 +370,10 @@ section {
 }
 
 #projects-btn {
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "JetBrains Mono", monospace;
     cursor: pointer;
-    font-size: 15px;
-    padding: 14px 29px;
+    font-size: 14px;
+    padding: 12px 24px;
     color: var(--bg-primary);
     background-color: var(--text-accent);
     background-image: linear-gradient(to bottom, var(--text-accent), var(--text-accent));
@@ -477,7 +479,7 @@ section {
 .project-name {
     margin-left: 0px;
     margin-bottom: 4px;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--text-accent);
     font-weight: bold;
     transition: color 0.3s ease;
@@ -487,7 +489,7 @@ section {
     margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 7px;
-    font-size: 15px;
+    font-size: 13px;
     color: var(--text-secondary);
     transition: color 0.3s ease;
 }
@@ -498,7 +500,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
 }
 
@@ -508,7 +510,7 @@ section {
 }
 
 .project-github-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 a .project-github-icon {
@@ -546,8 +548,9 @@ a .project-github-icon:hover {
 }
 
 .project-description {
-    font-size: 15px; 
+    font-size: 13px; 
     margin-bottom: 25px;
+    line-height: 1.4;
 }
 
 .bottom-section {
@@ -572,10 +575,10 @@ a .project-github-icon:hover {
     margin-top: 5px;
     text-align: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 10px;
-    padding: 2px 8px;
-    height: 20px;
+    padding: 2px 6px;
+    height: 18px;
     border: none;
     background-color: var(--border-secondary);
     border-radius: 3px;
@@ -712,9 +715,9 @@ a .project-github-icon:hover {
     margin-top: 16px;
     text-align: center;
     align-items: center;
-    font-size: 12px;
-    padding: 2px 8px;
-    height: 20px;
+    font-size: 11px;
+    padding: 2px 6px;
+    height: 18px;
     border: none;
     background-color: var(--border-secondary);
     border-radius: 3px;
@@ -770,7 +773,7 @@ a .project-github-icon:hover {
 }
 
 .date {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-secondary);
     white-space: nowrap;
     text-align: right;
@@ -851,7 +854,7 @@ a .project-github-icon:hover {
     color: var(--text-accent);
     margin-bottom: 20px;
     text-align: center;
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "JetBrains Mono", monospace;
     transition: color 0.3s ease;
 }
 
@@ -897,16 +900,16 @@ a .project-github-icon:hover {
     font-weight: 500;
     text-align: center;
     color: var(--text-primary);
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "JetBrains Mono", monospace;
     transition: color 0.3s ease;
 }
 
 .skill-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     text-align: center;
     color: var(--text-primary);
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "JetBrains Mono", monospace;
     transition: color 0.3s ease;
     margin: 0;
     line-height: 1.2;
@@ -974,8 +977,8 @@ a .project-github-icon:hover {
 
 .top-5-category h3 {
     margin-bottom: 35px;
-    font-family: "Ubuntu Mono", monospace;
-    font-size: 24px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 22px;
     color: var(--text-accent);
     text-align: center;
     transition: color 0.3s ease;
@@ -1038,7 +1041,7 @@ a .project-github-icon:hover {
 }
 
 .contact-me-msg {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 100px;
     padding: 0 20px;
     max-width: 500px;
@@ -1058,8 +1061,8 @@ a .project-github-icon:hover {
  #name-input, #email-input, #message-input {
     background-color: var(--input-bg);
     border-radius: 8px;
-    font-size: 16px;
-    font-family: "Ubuntu Mono", monospace;
+    font-size: 14px;
+    font-family: "JetBrains Mono", monospace;
     border: 1px solid var(--input-border); 
     padding-left: 10px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
@@ -1087,12 +1090,12 @@ a .project-github-icon:hover {
 }
 
 #mail-button {
-    font-family: "Ubuntu Mono", monospace;
-    font-size: 16px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px; 
+    padding-left: 18px;
+    padding-right: 18px; 
     border-radius: 10px;
     background: transparent;
     border: 2px solid var(--input-border);
@@ -1136,7 +1139,7 @@ footer {
     margin-top: 100px; 
     border-top: 1px solid var(--border-primary);
     color: var(--text-secondary);
-    font-size: 14px;
+    font-size: 13px;
     transition: border-color 0.3s ease, color 0.3s ease;
     background: transparent;
 }
@@ -1167,7 +1170,7 @@ footer .contact-icons a {
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     img {
@@ -1199,7 +1202,7 @@ footer .contact-icons a {
     }
 
     .navbar a {
-        font-size: 14px;
+        font-size: 13px;
         padding: 6px 10px;
         border-radius: 6px;
         transition: all 0.3s ease;
@@ -1235,13 +1238,13 @@ footer .contact-icons a {
     }
     
     #name {
-        font-size: 26px;
+        font-size: 24px;
         margin-bottom: 15px;
         text-align: left;
     }
     
     #intro {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 15px;
     }
     
@@ -1250,7 +1253,7 @@ footer .contact-icons a {
     }
     
     #second-section p {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.5;
         margin-bottom: 8px;
     }
@@ -1258,12 +1261,12 @@ footer .contact-icons a {
     #third-section {
         padding: 0;
         margin: 15px 0;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.5;
     }
     
     #reach-out {
-        font-size: 15px;
+        font-size: 13px;
         padding: 0;
         margin: 15px 0;
     }
@@ -1276,8 +1279,8 @@ footer .contact-icons a {
     }
     
     #resume-btn, #projects-btn {
-        padding: 14px 20px;
-        font-size: 15px;
+        padding: 12px 18px;
+        font-size: 13px;
         width: 100%;
         text-align: center;
     }
@@ -1301,11 +1304,11 @@ footer .contact-icons a {
     }
     
     .project-name {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .project-description {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.5;
     }
     
@@ -1315,8 +1318,8 @@ footer .contact-icons a {
     }
     
     .language {
-        font-size: 11px;
-        padding: 3px 6px;
+        font-size: 10px;
+        padding: 2px 5px;
         margin: 2px;
     }
     
@@ -1350,7 +1353,7 @@ footer .contact-icons a {
     }
     
     .skill-text {
-        font-size: 12px;
+        font-size: 11px;
         margin: 0;
         line-height: 1.2;
     }
@@ -1386,12 +1389,12 @@ footer .contact-icons a {
     }
     
     .subheading {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
     
     .quote {
-        font-size: 14px;
+        font-size: 12px;
         margin: 15px 20px;
         line-height: 1.4;
     }
@@ -1406,20 +1409,20 @@ footer .contact-icons a {
      }
      
      .contact-me-msg {
-         font-size: 16px;
+         font-size: 14px;
          margin-bottom: 40px;
          padding: 0 15px;
          line-height: 1.5;
      }
      
      #name-input, #email-input, #message-input {
-         font-size: 15px;
+         font-size: 13px;
          padding: 12px;
      }
      
      #mail-button {
-         font-size: 15px;
-         padding: 12px 20px;
+         font-size: 13px;
+         padding: 12px 18px;
      }
 
     #experience {
