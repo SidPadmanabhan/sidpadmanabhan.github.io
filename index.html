@@ -55,7 +55,7 @@
     <section id = "about"> 
         <div id = "name-section">
             <div id = "name"> 
-                <h1> Hi, I'm Sid. </h1>
+                <h1 id="typed-text"> </h1>
             </div> 
             <!-- <img src="assets/images/pfp.jpg" alt="Profile Picture" id="profile-pic"> -->
         </div>
@@ -570,7 +570,7 @@
         
         
     </div>
-        <p>&copy; 2025 Sid Padmanabhan. All Rights Reserved.</p>
+        <p>&copy; 2025 Sid Padmanabhan</p>
     </footer>
 
 
@@ -604,6 +604,48 @@
             localStorage.setItem('theme', newTheme);
             updateThemeIcon();
         });
+
+        const textToType = "Hi, I'm Sid.";
+        const typedElement = document.getElementById('typed-text');
+        let currentIndex = 0;
+        let isDeleting = false;
+
+        typedElement.innerHTML = '<span class="cursor">|</span>';
+
+        function getTypingDelay() {
+            const baseDelay = Math.random() * 60 + 80;
+            const currentChar = textToType.charAt(currentIndex);
+            
+            if (currentChar === ' ') return baseDelay + 50;
+            if (currentChar === ',' || currentChar === '.') return baseDelay + 200;
+            if (currentChar === "'") return baseDelay + 30;
+            
+            if (Math.random() < 0.15) return baseDelay + 150;
+            
+            return baseDelay;
+        }
+
+        function updateText() {
+            const cursor = '<span class="cursor">|</span>';
+            const currentText = textToType.substring(0, currentIndex);
+            typedElement.innerHTML = currentText + cursor;
+        }
+
+        function typeText() {
+            if (currentIndex <= textToType.length) {
+                updateText();
+                
+                if (currentIndex < textToType.length) {
+                    currentIndex++;
+                    setTimeout(typeText, getTypingDelay());
+                }
+            }
+        }
+
+        setTimeout(() => {
+            typeText();
+        }, 800);
+
     </script>
 
 </body>
